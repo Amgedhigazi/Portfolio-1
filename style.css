@@ -1,0 +1,228 @@
+
+    *{
+
+        padding: 0;
+        margin: 0;
+    }
+
+
+        
+    body {
+        height: 100vh;
+        border: 10px solid red;
+      }
+      
+      main {
+        margin: 15px;
+        font-family: sans-serif;
+        font-size: 10px;
+      }
+      
+      li {
+        margin-bottom: 5px;
+      }
+      
+      @media screen and (min-width: 376px) {
+        body {
+          border: 10px solid blue;
+        }
+      }
+      
+      @media screen and (min-width: 426px) {
+        body {
+          border-color: green;
+        }
+      }
+      
+      @media screen and (min-width: 769px) {
+        body {
+          border-color: yellow;
+        }
+      }
+      
+      @media screen and (min-width: 1025px) {
+        body {
+          border-color: hotpink;
+        }
+      }
+      
+      @media screen and (min-width: 1441px) {
+        body {
+          border-color: azure;
+        }
+      }
+      
+        
+        #header {
+            background: url(./image/DSC_4273.jpg) center top /cover no-repeat;
+            padding-top: 90px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            height: 900px;
+        }
+
+        #header2 {
+            background: url(./image/DSC_4655BW.jpg) center top / cover no-repeat;
+            padding-top: 60px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            height: 900px;
+        }
+
+
+
+        #header3 {
+            background: url(./image/DSC_4742.jpg) center top / cover no-repeat;
+            padding-top: 60px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            height: 900px;
+        }
+
+        #header4 {
+            background-color: rgba(255, 248, 220, 0.792);
+            padding-top: 60px;
+            padding-left: 90px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            height: 750px;
+        }
+
+
+        #gallery .container {
+
+            padding-top: 20px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            height: 850px;
+
+        }
+
+        #gallery {
+            padding-bottom: 0px;
+            padding-top: 0px;
+            margin-top: 10px;
+            margin-bottom: 2px;
+            height: 550px;
+
+        }
+
+        #gallery .card {
+            padding-top: 0px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            height: 850px;
+
+        }
+
+        #gallery .card img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #gallery .card {
+            background-color: #18d4ca;
+            height: auto;
+            width: 100%;
+        }
+
+
+        #gallery2 {
+            padding-bottom: 0px;
+            padding-top: 0px;
+            margin-top: 10px;
+            margin-bottom: 2px;
+            height: 550px;
+        }
+
+        #gallery2 .card {
+            padding-top: 0px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            height: 850px;
+
+        }
+
+        #gallery2 .card {
+            background-color: #18d4ca;
+            height: auto;
+            width: 100%;
+        }
+
+   
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        div [class^="col-"] {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .card {
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        .card-title {
+            font-size: 15px;
+            font-weight: bolder;
+            transition: 1s;
+            cursor: pointer;
+            padding-left: 15px;
+        }
+
+        .card-title i {
+            font-size: 15px;
+            transition: 1s;
+            cursor: pointer;
+            color: #ffa710;
+            padding-left: 10px;
+        }
+
+        .card-title i:hover {
+            transform: scale(1.25) rotate(100deg);
+            color: #18d4ca;
+
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-text {
+            height: 80px;
+            padding-left: 15px;
+        }
+
+        .card::before,
+        .card::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: scale3d(0, 0, 1);
+            transition: transform .3s ease-out 0s;
+            background: rgba(255, 255, 255, 0.1);
+            content: '';
+            pointer-events: none;
+        }
+
+        .card::before {
+            transform-origin: left top;
+        }
+
+        .card::after {
+            transform-origin: right bottom;
+        }
+
+        .card:hover::before,
+        .card:hover::after,
+        .card:focus::before,
+        .card:focus::after {
+            transform: scale3d(1, 1, 1);
+        }
+    </style>

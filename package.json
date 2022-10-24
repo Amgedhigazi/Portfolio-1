@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "test": "jest --runInBand --forceExit"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "puppeteer": "^16.1.1"
+  },
+  "autograding": {
+    "setup": "cd ./node_modules/puppeteer && npm run install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DigitalCareerInstitute/UIB-framework-bootstrap",
+    "id": 213627535
+  }
+}
