@@ -7,52 +7,6 @@
 
 
         
-    body {
-        height: 100vh;
-        border: 10px solid red;
-      }
-      
-      main {
-        margin: 15px;
-        font-family: sans-serif;
-        font-size: 10px;
-      }
-      
-      li {
-        margin-bottom: 5px;
-      }
-      
-      @media screen and (min-width: 376px) {
-        body {
-          border: 10px solid blue;
-        }
-      }
-      
-      @media screen and (min-width: 426px) {
-        body {
-          border-color: green;
-        }
-      }
-      
-      @media screen and (min-width: 769px) {
-        body {
-          border-color: yellow;
-        }
-      }
-      
-      @media screen and (min-width: 1025px) {
-        body {
-          border-color: hotpink;
-        }
-      }
-      
-      @media screen and (min-width: 1441px) {
-        body {
-          border-color: azure;
-        }
-      }
-      
-        
         #header {
             background: url(./image/DSC_4273.jpg) center top /cover no-repeat;
             padding-top: 90px;
